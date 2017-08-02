@@ -1,23 +1,24 @@
 <template>
   <div class="hello">
-    <md-card>
+    <md-card v-for="card in cards" :key="card.id" class="card">
       <md-card-media>
-        <img src="assets/card-image-2.jpg" alt="People">
+        <img :src="card.url" :alt="card.info">
       </md-card-media>
   
       <md-card-content>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio itaque ea nostrum.
+        <span class="md-headline">{{card.title}}</span>
       </md-card-content>
     </md-card>
   </div>
 </template>
 
 <script>
+import data from '../data.js'
 export default {
   name: 'hello',
   data() {
     return {
-      data: 'Welcome to Your Vue.js PWA'
+      cards:data.pictures
     }
   }
 }
@@ -25,22 +26,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
-h1,
-h2 {
-  font-weight: normal;
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-
-a {
-  color: #35495E;
+.card{
+  margin-bottom: 25px;
 }
 </style>

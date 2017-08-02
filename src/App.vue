@@ -1,10 +1,9 @@
 <template>
   <div id="app">
     <header>
-      <span>Vue.js PWA</span>
+      <span>Chat PWA</span>
     </header>
     <main>
-      <img src="./assets/logo.png" alt="Vue.js PWA">
       <hello></hello>
     </main>
   </div>
@@ -22,20 +21,14 @@ export default {
 </script>
 
 <style>
-body {
-  margin: 0;
-}
 
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
-}
 
 main {
   text-align: center;
-  margin-top: 40px;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 10px;
+
 }
 
 header {
