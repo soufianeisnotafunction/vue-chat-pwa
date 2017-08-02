@@ -3,8 +3,13 @@
 import Vue from 'vue'
 import App from './App'
 var VueMaterial = require('vue-material')
+var VueFire = require('vuefire')
 
+
+Vue.use(VueFire)
 Vue.use(VueMaterial)
+
+
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */

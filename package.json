@@ -10,8 +10,10 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "firebase": "^4.2.0",
     "vue": "^2.3.3",
-    "vue-material": "^0.7.4"
+    "vue-material": "^0.7.4",
+    "vuefire": "^1.4.3"
   },
   "devDependencies": {
     "autoprefixer": "^6.7.2",
